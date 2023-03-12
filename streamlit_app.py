@@ -1,9 +1,9 @@
 import openai
 import streamlit as sl
 
-openai.organization = config["organization"]
-openai.api_key = config["api_key"]
-password = config["password"]
+openai.organization = sl.secrets["organization"]
+openai.api_key =  sl.secrets["api_key"]
+password =  sl.secrets["password"]
 
 if password != sl.text_input("Enter password"): exit(600)
 
