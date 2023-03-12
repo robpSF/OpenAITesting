@@ -7,7 +7,7 @@ password =  sl.secrets["password"]
 
 if password != sl.text_input("Enter password"): exit(600)
 
-temp = sl.sidebar.slider("Craziness of ideas",0.0,1.0,0.5)
+temp = sl.sidebar.slider("Craziness of ideas",0.0,2.0,0.5)
 model = sl.sidebar.radio("model to use",("text-davinci-003","gpt-3.5-turbo-0301"))
 
 
